@@ -7,11 +7,11 @@ data:
     <source>
       type tail
       format none
-      path /tmp/log/input.log
-      pos_file /tmp/log/input.log.pos
+      path /tmp/log/output.log
+      pos_file /tmp/log/output.log.pos
       tag count.format1
     </source>
 
     <match **>
-      type google_cloud
+      format json
     </match>
