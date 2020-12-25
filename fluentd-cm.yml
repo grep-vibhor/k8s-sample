@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentd-config
+data:
+  fluentd.conf: |
+    <source>
+      type tail
+      format none
+      path /tmp/log/input.log
+      pos_file /tmp/log/input.log.pos
+      tag count.format1
+    </source>
+
+    <match **>
+      type google_cloud
+    </match>
