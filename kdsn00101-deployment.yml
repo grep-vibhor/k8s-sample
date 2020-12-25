@@ -6,7 +6,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment-kdsn00101
   namespace: kdsn00101
   labels:
     app: kdsn
