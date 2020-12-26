@@ -22,7 +22,6 @@ metadata:
   namespace: adapter
 spec:
   selector:
-    matchLabels:
       type: ambassador
   ports:
     - protocol: TCP
